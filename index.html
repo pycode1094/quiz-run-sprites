@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>청탁금지법 퀴즈런 - 스프라이트</title>
+<style>
+body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #f8f9fa; }
+h1 { color: #0089AE; }
+.sprites { display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0; }
+.sprite-card { background: #fff; border-radius: 12px; padding: 16px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.sprite-card img { height: 120px; }
+.sprite-card p { margin: 8px 0 0; font-size: 13px; color: #666; }
+code { background: #e9ecef; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>🏃 청탁금지법 퀴즈런 - 캐릭터 스프라이트</h1>
+<p>대한상공회의소 인력개발사업단 캐릭터 게임용 스프라이트입니다.</p>
+
+<div class="sprites">
+  <div class="sprite-card"><img src="stand.png" alt="stand"><p><code>stand.png</code><br>기본 포즈</p></div>
+  <div class="sprite-card"><img src="run1.png" alt="run1"><p><code>run1.png</code><br>달리기 1</p></div>
+  <div class="sprite-card"><img src="run2.png" alt="run2"><p><code>run2.png</code><br>달리기 2</p></div>
+  <div class="sprite-card"><img src="hit.png" alt="hit"><p><code>hit.png</code><br>오답 효과</p></div>
+  <div class="sprite-card"><img src="correct.png" alt="correct"><p><code>correct.png</code><br>정답 효과</p></div>
+</div>
+
+<h2>사용법</h2>
+<pre>
+const SPRITE_BASE = "https://YOUR_USERNAME.github.io/quiz-run-sprites";
+
+const SPRITES = {
+  stand:   SPRITE_BASE + "/stand.png",
+  run1:    SPRITE_BASE + "/run1.png",
+  run2:    SPRITE_BASE + "/run2.png",
+  hit:     SPRITE_BASE + "/hit.png",
+  correct: SPRITE_BASE + "/correct.png",
+};
+</pre>
+</body>
+</html>
