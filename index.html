@@ -2,27 +2,44 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>청탁금지법 퀴즈런 - 스프라이트</title>
 <style>
-body{font-family:sans-serif;max-width:800px;margin:40px auto;padding:0 20px;background:#f8f9fa}
-h1{color:#0089AE}
-.sprites{display:flex;gap:20px;flex-wrap:wrap;margin:20px 0}
-.sprite-card{background:#fff;border-radius:12px;padding:20px 24px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.1);min-width:120px}
-.sprite-card img{height:150px;width:auto;object-fit:contain}
-.sprite-card p{margin:8px 0 0;font-size:13px;color:#666}
-code{background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:13px}
-pre{background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;overflow-x:auto;font-size:13px}
+body { font-family: 'Apple SD Gothic Neo', sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #f8f9fa; }
+h1 { color: #0089AE; font-size: 22px; }
+.sprites { display: flex; gap: 16px; flex-wrap: wrap; margin: 24px 0; }
+.sprite-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sprite-card img {
+  width: 150px;
+  height: 210px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+.sprite-card p { margin: 12px 0 0; font-size: 13px; color: #666; line-height: 1.6; }
+code { background: #e9ecef; padding: 2px 6px; border-radius: 4px; font-size: 12px; }
 </style>
 </head>
 <body>
 <h1>청탁금지법 퀴즈런 - 캐릭터 스프라이트</h1>
-<p>대한상공회의소 인력개발사업단 캐릭터 게임용 스프라이트</p>
+<p>대한상공회의소 인력개발사업단 캐릭터 게임용 스프라이트 (모두 150x210px)</p>
 <div class="sprites">
-  <div class="sprite-card"><img src="stand.png"><p><code>stand.png</code><br>기본</p></div>
-  <div class="sprite-card"><img src="run1.png"><p><code>run1.png</code><br>달리기1</p></div>
-  <div class="sprite-card"><img src="run2.png"><p><code>run2.png</code><br>달리기2</p></div>
-  <div class="sprite-card"><img src="hit.png"><p><code>hit.png</code><br>오답</p></div>
-  <div class="sprite-card"><img src="correct.png"><p><code>correct.png</code><br>정답</p></div>
+  <div class="sprite-card"><img src="stand.png" alt="stand"><p><code>stand.png</code><br>기본 포즈</p></div>
+  <div class="sprite-card"><img src="run1.png" alt="run1"><p><code>run1.png</code><br>달리기 1</p></div>
+  <div class="sprite-card"><img src="run2.png" alt="run2"><p><code>run2.png</code><br>달리기 2</p></div>
+  <div class="sprite-card"><img src="hit.png" alt="hit"><p><code>hit.png</code><br>오답 효과</p></div>
+  <div class="sprite-card"><img src="correct.png" alt="correct"><p><code>correct.png</code><br>정답 효과</p></div>
 </div>
 </body>
 </html>
